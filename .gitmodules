@@ -1,0 +1,6 @@
+[submodule "ur_scrapper"]
+	path = ur_scrapper
+	url = https://github.com/mikheev-dev/ur_scrapper.git
+[submodule "ur_service"]
+	path = ur_service
+	url = https://github.com/mikheev-dev/ur_service.git
