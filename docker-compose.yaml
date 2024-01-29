@@ -15,18 +15,19 @@ services:
       retries: 5
       start_period: 30s
   ur-scrapper:
-    build: ./scrapper
+    build: ./ur_scrapper
     depends_on:
       ur-db:
         condition: service_healthy
     environment:
-      UPLOAD_DATA: true
       DB_HOST: ur-db
       DB_USER: uradmin
       DB_PASSWORD: test77
       DB_NAME: urdb
+    env_file:
+      - .env
   ur-service:
-    build: ./service
+    build: ./ur_service
     depends_on:
       ur-db:
         condition: service_healthy
@@ -35,6 +36,7 @@ services:
       DB_USER: uradmin
       DB_PASSWORD: test77
       DB_NAME: urdb
+      UPLOAD_DATA_WITHOUT_SCRAPPING: ${UPLOAD_DATA_WITHOUT_SCRAPPING}
     ports:
       - 8000:8000
 
