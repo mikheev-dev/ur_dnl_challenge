@@ -37,3 +37,6 @@ Containerize the web service.
 ## Stop
 * Run
 ```docker compose down```
+
+## Swagger
+* Open http://0.0.0.0:8000/docs#
