@@ -84,3 +84,6 @@ categories                    parts_categories                |             part
 ----------                    -------------------             |             --------------------
 name | id <------------------ category_id | part_id ----------------------> id | number | spec
 ```
+
+## Tests
+Code is not covered well. Let's think like about it's a simulation of working process when the developer never have time to fully cover the code.

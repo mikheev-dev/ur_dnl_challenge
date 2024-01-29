@@ -21,7 +21,7 @@ Containerize the web service.
 
 ## Setup
 * Run 
-```git submodule update --init --recursive```
+```git submodule update --init --recursive --remote```
 
 ## Run
 * Run 
